@@ -1,8 +1,8 @@
 build:
-    docker compose build
+    sudo docker compose build
 
 run:
-    docker compose up --detach
+    sudo docker compose up --detach
 
 # create-backup:
 #     #!/usr/bin/bash
