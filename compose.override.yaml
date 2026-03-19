@@ -37,8 +37,9 @@ services:
       ##     https://zulip.readthedocs.io/en/stable/production/settings.html
       ##
       ## The following two settings are required:
-      SETTING_EXTERNAL_HOST: "zulip.example.com"
-      SETTING_ZULIP_ADMINISTRATOR: "zulip-admin@example.com"
+      SETTING_EXTERNAL_HOST: "zulip.mostlydef.com"
+      SETTING_ZULIP_ADMINISTRATOR: "mattc41190@gmail.com"
+      TRUST_GATEWAY_IP: True # I think this will allow me to run behind my Caddy proxy
 
       ## Most deploys do SSL termination outside of the container; Zulip
       ## defaults to only serving traffic over HTTP. If you'd like this
