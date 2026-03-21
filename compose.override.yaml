@@ -40,6 +40,7 @@ services:
       SETTING_EXTERNAL_HOST: "zulip.mostlydef.com"
       SETTING_ZULIP_ADMINISTRATOR: "mattc41190@gmail.com"
       TRUST_GATEWAY_IP: True # I think this will allow me to run behind my Caddy proxy
+      CONFIG_application_server__http_only: True # Use this + Caddy point to the 8080 port (HTTP ! HTTPS)
 
       ## Most deploys do SSL termination outside of the container; Zulip
       ## defaults to only serving traffic over HTTP. If you'd like this
